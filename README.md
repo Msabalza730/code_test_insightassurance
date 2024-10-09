@@ -13,6 +13,7 @@ For the development of the test, a project was created using Python 3.11 - Djang
 - After having all approved classes, results are sent to a coordinator who reviews and presents a general result: approved/disapproved (again and different from the first ones) - If the result is disapproved, the student must repeat the whole program
 
 * For the development of this project, the following diagram was created for the models:
+![image](https://github.com/user-attachments/assets/c452b519-09a3-41ec-82ce-0436d6e82e38)
 
 
 * In the evidence folder you can see some images of the operation of the project and its API.
@@ -51,4 +52,31 @@ For the development of the test, a project was created using Python 3.11 - Djang
 
 ```python
     - python manage.py test   
+```
+
+- The available URLs in this project:
+```
+    admin/
+    myapp/ professors/ [name='professor_list']
+    myapp/ professors/create/ [name='create_professor']
+    myapp/ professors/update/<int:pk>/ [name='update_professor']
+    myapp/ professors/delete/<int:pk>/ [name='delete_professor']
+    myapp/ students/ [name='student_list']
+    myapp/ students/create/ [name='create_student']
+    myapp/ students/update/<int:pk>/ [name='update_student']
+    myapp/ students/delete/<int:pk>/ [name='delete_student']
+    myapp/ students/status/<int:student_id>/ [name='student_status']
+    myapp/ supervisors/ [name='supervisor_list']
+    myapp/ supervisors/create/ [name='create_supervisor']
+    myapp/ supervisors/update/<int:pk>/ [name='update_supervisor']
+    myapp/ supervisors/delete/<int:pk>/ [name='delete_supervisor']
+    myapp/ courses/ [name='course_list']
+    myapp/ courses/create/ [name='create_course']
+    myapp/ courses/update/<int:pk>/ [name='update_course']
+    myapp/ courses/delete/<int:pk>/ [name='delete_course']
+    myapp/ learningprograms/ [name='learningprogram_list']
+    myapp/ learningprograms/create/ [name='create_learningprogram']
+    myapp/ learningprograms/update/<int:pk>/ [name='update_learningprogram']
+    myapp/ learningprograms/delete/<int:pk>/ [name='delete_learningprogram']
+    myapp/ student-status/<int:student_id>/ [name='student-status']
 ```
