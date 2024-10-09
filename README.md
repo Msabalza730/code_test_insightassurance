@@ -9,6 +9,6 @@ Technical Test Python Dev
 ```python
     python -m venv env
     (windows) cd env -> .\Scripts\activate
-    (linux) source bin/activate
+    (linux) source env/bin/activate
 ```
 
