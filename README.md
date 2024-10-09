@@ -15,7 +15,7 @@ For the development of the test, a project was created using Python 3.11 - Djang
 * For the development of this project, the following diagram was created for the models:
 ![image](https://github.com/user-attachments/assets/c452b519-09a3-41ec-82ce-0436d6e82e38)
 
-
+* In the utils.py file are the methods to calculate the student's score. I assumed that to pass they must have a score of 4, for the conditional 3 and they fail with 2 or below.
 * In the evidence folder you can see some images of the operation of the project and its API.
 
 ## Run this project
