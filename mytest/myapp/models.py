@@ -80,6 +80,7 @@ class LearningProgram(models.Model):
         - exam_result: CharField to add the reviews of the exams
         - exam_attached : FileField to attach the exams
         - attempts : PositiveIntegerField to count the times to repeat the exam before considered disapproved
+        - supervisor : ForeignKey to assign a supervisor
     """
     STATUS_CHOICES = [
         ('approved', 'Approved'),
@@ -92,6 +93,7 @@ class LearningProgram(models.Model):
     exam_result = models.CharField(max_length=15, choices=STATUS_CHOICES, blank=True, null=True)
     exam_attached = models.FileField(upload_to='exam_attached/', blank=True, null=True)
     attempts = models.PositiveIntegerField(default=1)
+    supervisor = models.ForeignKey(Supervisor, on_delete=models.SET_NULL, null=True, related_name='supervisor')
 
     def __str__(self):
         return f'{self.student.name} - {self.course_assigned.name}'
